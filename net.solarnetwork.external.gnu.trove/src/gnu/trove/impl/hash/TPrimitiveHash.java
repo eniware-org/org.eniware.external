@@ -1,8 +1,4 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Copyright (c) 2001, Eric D. Friedman All Rights Reserved.
-// Copyright (c) 2009, Rob Eden All Rights Reserved.
-// Copyright (c) 2009, Jeff Randall All Rights Reserved.
-//
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
 // License as published by the Free Software Foundation; either
@@ -12,10 +8,6 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-//
-// You should have received a copy of the GNU Lesser General Public
-// License along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 ///////////////////////////////////////////////////////////////////////////////
 
 package gnu.trove.impl.hash;
@@ -25,6 +17,10 @@ import gnu.trove.impl.HashFunctions;
 
 
 /**
+ *  ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
  * The base class for hashtables of primitive values.  Since there is
  * no notion of object equality for primitives, it isn't possible to
  * use a `REMOVED' object to track deletions in an open-addressed table.
@@ -32,8 +28,6 @@ import gnu.trove.impl.HashFunctions;
  * in which flags can be set to indicate that a particular slot in the
  * hash table is FREE, FULL, or REMOVED.
  *
- * @author Eric D. Friedman, Rob Eden, Jeff Randall
- * @version $Id: TPrimitiveHash.java,v 1.1.2.6 2010/03/01 23:39:07 robeden Exp $
  */
 abstract public class TPrimitiveHash extends THash {
 	@SuppressWarnings( { "UnusedDeclaration" } )

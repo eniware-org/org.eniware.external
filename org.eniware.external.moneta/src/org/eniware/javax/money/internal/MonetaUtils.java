@@ -1,8 +1,4 @@
 /* ==================================================================
- * MonetaUtils.java - 28/08/2017 5:28:15 PM
- * 
- * Copyright 2017 SolarNetwork.net Dev Team
- * 
  * This program is free software; you can redistribute it and/or 
  * modify it under the terms of the GNU General Public License as 
  * published by the Free Software Foundation; either version 2 of 
@@ -12,11 +8,13 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of 
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
  * General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License 
- * along with this program; if not, write to the Free Software 
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 
- * 02111-1307 USA
+ * ==================================================================
+ */
+
+/*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
  * ==================================================================
  */
 
@@ -28,8 +26,6 @@ import org.javamoney.moneta.format.CurrencyStyle;
 
 /**
  * Utilities specific to the Moneta implementation of {@code javax.money}.
- * 
- * @author matt
  * @version 1.0
  */
 public final class MonetaUtils {

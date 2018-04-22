@@ -1,9 +1,5 @@
-//License
+
 /***
- * Java Modbus Library (jamod)
- * Copyright (c) 2002-2004, jamod development team
- * All rights reserved.
- *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
  * met:
@@ -30,7 +26,14 @@
  * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
- ***/
+ * 
+ * /*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
+ 
 package net.wimpi.modbus.cmd;
 
 import net.wimpi.modbus.Modbus;
@@ -61,9 +64,7 @@ import java.net.InetAddress;
  * react by turning pos all signals of the I/O modules.
  * After this timeout, the device might require a
  * reset message.
- *
- * @author Dieter Wimberger
- * @version 1.2rc2 (14/04/2014)
+ * @version 1.2rc2 
  */
 public class AIAOTest {
 

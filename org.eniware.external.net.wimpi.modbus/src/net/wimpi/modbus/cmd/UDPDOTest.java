@@ -1,4 +1,4 @@
-//License
+
 /***
  * Java Modbus Library (jamod)
  * Copyright (c) 2002-2004, jamod development team
@@ -30,7 +30,14 @@
  * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
- ***/
+ * 
+ * /*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
+
 package net.wimpi.modbus.cmd;
 
 import java.net.InetAddress;
@@ -55,9 +62,7 @@ import net.wimpi.modbus.Modbus;
  * react by turning pos all signals of the I/O modules.
  * After this timeout, the device might require a
  * reset message.
- *
- * @author Dieter Wimberger
- * @version 1.2rc2 (14/04/2014)
+ * @version 1.2rc2 
  */
 public class UDPDOTest {
 

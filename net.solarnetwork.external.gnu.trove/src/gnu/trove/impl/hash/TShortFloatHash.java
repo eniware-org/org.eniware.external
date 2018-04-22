@@ -1,8 +1,4 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Copyright (c) 2001, Eric D. Friedman All Rights Reserved.
-// Copyright (c) 2009, Rob Eden All Rights Reserved.
-// Copyright (c) 2009, Jeff Randall All Rights Reserved.
-//
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
 // License as published by the Free Software Foundation; either
@@ -33,16 +29,15 @@ import java.io.IOException;
 //////////////////////////////////////////////////
 
 
-/**
- * An open addressed hashing implementation for short/float primitive entries.
- *
- * Created: Sun Nov  4 08:56:06 2001
- *
- * @author Eric D. Friedman
- * @author Rob Eden
- * @author Jeff Randall
- * @version $Id: _K__V_Hash.template,v 1.1.2.6 2009/11/07 03:36:44 robeden Exp $
+
+/* ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
  */
+
+
+
 abstract public class TShortFloatHash extends TPrimitiveHash {
 	static final long serialVersionUID = 1L;
 

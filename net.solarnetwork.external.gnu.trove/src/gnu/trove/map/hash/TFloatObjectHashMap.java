@@ -1,8 +1,4 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Copyright (c) 2001, Eric D. Friedman All Rights Reserved.
-// Copyright (c) 2009, Rob Eden All Rights Reserved.
-// Copyright (c) 2009, Jeff Randall All Rights Reserved.
-//
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
 // License as published by the Free Software Foundation; either
@@ -12,11 +8,14 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-//
-// You should have received a copy of the GNU Lesser General Public
-// License along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 ///////////////////////////////////////////////////////////////////////////////
+
+/*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
 
 package gnu.trove.map.hash;
 
@@ -45,12 +44,6 @@ import java.util.*;
 
 /**
  * An open addressed Map implementation for float keys and Object values.
- *
- * Created: Sun Nov  4 08:52:45 2001
- *
- * @author Eric D. Friedman
- * @author Rob Eden
- * @author Jeff Randall
  */
 public class TFloatObjectHashMap<V> extends TFloatHash implements
     TFloatObjectMap<V>, Externalizable {

@@ -1,9 +1,5 @@
-//License
+
 /***
- * Java Modbus Library (jamod)
- * Copyright (c) 2002-2004, jamod development team
- * All rights reserved.
- *
  * Redistribution and use in source and binary forms, with or without
  * modification, are permitted provided that the following conditions are
  * met:
@@ -31,19 +27,23 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  ***/
-/***
- * Copied with style from
- * Lea, Doug: "Concurrent Programming in Java: Design Principles and Patterns",
- * Second Edition, Addison-Wesley, ISBN 0-201-31009-0, November 1999
- ***/
+
+/*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
+
 package net.wimpi.modbus.util;
 
 /**
  * Class defining a linked node element.
- *
- * @author Doug Lea, Dieter Wimberger
- * @version 1.2rc2 (14/04/2014)
+
+ * @version 1.2rc2 
  */ 
+
+
 public class LinkedNode {
 
   protected Object m_Node;

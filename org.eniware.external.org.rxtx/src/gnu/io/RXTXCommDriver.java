@@ -1,14 +1,4 @@
 /*-------------------------------------------------------------------------
-|   RXTX License v 2.1 - LGPL v 2.1 + Linking Over Controlled Interface.
-|   RXTX is a native interface to serial ports in java.
-|   Copyright 1998 Kevin Hester, kevinh@acm.org
-|   Copyright 2000-2008 Trent Jarvi tjarvi@qbang.org and others who
-|   actually wrote it.  See individual source files for more information.
-|
-|   A copy of the LGPL v 2.1 may be found at
-|   http://www.gnu.org/licenses/lgpl.txt on March 4th 2007.  A copy is
-|   here for your convenience.
-|
 |   This library is free software; you can redistribute it and/or
 |   modify it under the terms of the GNU Lesser General Public
 |   License as published by the Free Software Foundation; either
@@ -50,16 +40,15 @@
 |   gives permission to release a modified version without this exception; this
 |   exception also makes it possible to release a modified version which
 |   carries forward this exception.
-|
-|   You should have received a copy of the GNU Lesser General Public
-|   License along with this library; if not, write to the Free
-|   Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
-|   All trademarks belong to their respective owners.
 --------------------------------------------------------------------------*/
-/* Martin Pool <mbp@linuxcare.com> added support for explicitly-specified
- * lists of ports, October 2000. */
-/* Joseph Goldstone <joseph@lp.com> reorganized to support registered ports,
- * known ports, and scanned ports, July 2001 */
+
+
+/*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
 
 package gnu.io;
 

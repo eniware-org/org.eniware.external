@@ -1,3 +1,11 @@
+
+/*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
+
 package gnu.trove.set.hash;
 
 import gnu.trove.iterator.TIntIterator;
@@ -16,9 +24,9 @@ import java.util.Iterator;
 
 /**
  * Created by IntelliJ IDEA.
- * User: Johan
- * Date: 15/03/11
- * Time: 18:15
+ * User: 
+ * Date: 
+ * Time: 
  * To change this template use File | Settings | File Templates.
  */
 public class TLinkedHashSet<E> extends THashSet<E> {

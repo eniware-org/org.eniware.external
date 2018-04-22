@@ -1,8 +1,4 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Copyright (c) 2001, Eric D. Friedman All Rights Reserved.
-// Copyright (c) 2009, Rob Eden All Rights Reserved.
-// Copyright (c) 2009, Jeff Randall All Rights Reserved.
-//
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
 // License as published by the Free Software Foundation; either
@@ -12,10 +8,6 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-//
-// You should have received a copy of the GNU Lesser General Public
-// License along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 ///////////////////////////////////////////////////////////////////////////////
 
 package gnu.trove.impl.hash;
@@ -31,18 +23,14 @@ import java.io.ObjectInput;
 
 
 
-/**
- * Base class for hashtables that use open addressing to resolve
- * collisions.
- *
- * Created: Wed Nov 28 21:11:16 2001
- *
- * @author Eric D. Friedman
- * @author Rob Eden (auto-compaction)
- * @author Jeff Randall
- *
- * @version $Id: THash.java,v 1.1.2.4 2010/03/02 00:55:34 robeden Exp $
+
+/* ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
  */
+
+
 abstract public class THash implements Externalizable {
     @SuppressWarnings( { "UnusedDeclaration" } )
     static final long serialVersionUID = -1792948471915530295L;

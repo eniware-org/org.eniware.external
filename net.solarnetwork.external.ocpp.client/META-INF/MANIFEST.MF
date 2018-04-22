@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: OCPP JAX-WS Client
-Bundle-SymbolicName: net.solarnetwork.external.ocpp.client
+Bundle-SymbolicName: org.eniware.external.ocpp.client
 Bundle-Version: 1.7.0
 Bundle-Vendor: SolarNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

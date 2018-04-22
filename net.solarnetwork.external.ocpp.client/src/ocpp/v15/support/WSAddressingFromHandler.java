@@ -1,8 +1,4 @@
 /* ==================================================================
- * WSAddressingFromHandler.java - 13/06/2015 12:57:24 pm
- * 
- * Copyright 2007-2015 SolarNetwork.net Dev Team
- * 
  * This program is free software; you can redistribute it and/or 
  * modify it under the terms of the GNU General Public License as 
  * published by the Free Software Foundation; either version 2 of 
@@ -12,13 +8,16 @@
  * but WITHOUT ANY WARRANTY; without even the implied warranty of 
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU 
  * General Public License for more details.
- * 
- * You should have received a copy of the GNU General Public License 
- * along with this program; if not, write to the Free Software 
- * Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA 
- * 02111-1307 USA
  * ==================================================================
  */
+
+/*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
+
 
 package ocpp.v15.support;
 
@@ -43,10 +42,10 @@ import org.slf4j.LoggerFactory;
 /**
  * {@link SOAPHandler} for inserting {@code wsa:From} headers into outbound
  * messages.
- * 
- * @author matt
  * @version 1.0
  */
+
+
 public class WSAddressingFromHandler implements SOAPHandler<SOAPMessageContext> {
 
 	public static final String WSA_NS = "http://www.w3.org/2005/08/addressing";

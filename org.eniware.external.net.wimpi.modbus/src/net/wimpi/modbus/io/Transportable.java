@@ -1,3 +1,10 @@
+/*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
+
 package net.wimpi.modbus.io;
 
 import java.io.DataInput;
@@ -6,9 +13,7 @@ import java.io.IOException;
 
 /**
  * Interface defining a transportable class.
- *
- * @author Dieter Wimberger
- * @version 1.2rc2 (14/04/2014)
+ * @version 1.2rc2 
  */
 public interface Transportable {
 

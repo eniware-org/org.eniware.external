@@ -1,4 +1,9 @@
-//   Copyright (c) 1999 CERN - European Organization for Nuclear Research.
+/* ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
+
 
 //   Permission to use, copy, modify, distribute and sell this software
 //   and its documentation for any purpose is hereby granted without fee,
@@ -7,6 +12,7 @@
 //   supporting documentation. CERN makes no representations about the
 //   suitability of this software for any purpose. It is provided "as is"
 //   without expressed or implied warranty.
+
 package gnu.trove.impl;
 
 import java.util.Arrays;

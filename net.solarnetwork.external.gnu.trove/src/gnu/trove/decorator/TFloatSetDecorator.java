@@ -1,8 +1,4 @@
 ///////////////////////////////////////////////////////////////////////////////
-// Copyright (c) 2002, Eric D. Friedman All Rights Reserved.
-// Copyright (c) 2009, Robert D. Eden All Rights Reserved.
-// Copyright (c) 2009, Jeff Randall All Rights Reserved.
-//
 // This library is free software; you can redistribute it and/or
 // modify it under the terms of the GNU Lesser General Public
 // License as published by the Free Software Foundation; either
@@ -12,10 +8,6 @@
 // but WITHOUT ANY WARRANTY; without even the implied warranty of
 // MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 // GNU General Public License for more details.
-//
-// You should have received a copy of the GNU Lesser General Public
-// License along with this program; if not, write to the Free Software
-// Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 ///////////////////////////////////////////////////////////////////////////////
 
 package gnu.trove.decorator;
@@ -34,23 +26,14 @@ import java.util.Set;
 //////////////////////////////////////////////////
 
 
-/**
- * Wrapper class to make a TFloatSet conform to the <tt>java.util.Set</tt> API.
- * This class simply decorates an underlying TFloatSet and translates the Object-based
- * APIs into their Trove primitive analogs.
- * <p/>
- * <p/>
- * Note that wrapping and unwrapping primitive values is extremely inefficient.  If
- * possible, users of this class should override the appropriate methods in this class
- * and use a table of canonical values.
- * </p>
- * <p/>
- * Created: Tue Sep 24 22:08:17 PDT 2002
- *
- * @author Eric D. Friedman
- * @author Robert D. Eden
- * @author Jeff Randall
+
+/* ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
  */
+
+
 public class TFloatSetDecorator extends AbstractSet<Float>
     implements Set<Float>, Externalizable {
 

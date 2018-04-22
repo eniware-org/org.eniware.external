@@ -1,4 +1,4 @@
-//License
+
 /***
  * Java Modbus Library (jamod)
  * Copyright (c) 2002-2004, jamod development team
@@ -30,7 +30,14 @@
  * CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
- ***/
+ * 
+ * /*
+ * ==================================================================
+ *  Eniware Open sorce:Nikolai Manchev
+ *  Apache License 2.0
+ * ==================================================================
+ */
+
 package net.wimpi.modbus.cmd;
 
 import java.net.InetAddress;
@@ -44,9 +51,7 @@ import net.wimpi.modbus.Modbus;
 /**
  * Class that implements a simple commandline
  * tool for reading a digital input.
- *
- * @author Dieter Wimberger
- * @version 1.2rc2 (14/04/2014)
+ * @version 1.2rc2 
  */
 public class DITest {
 
