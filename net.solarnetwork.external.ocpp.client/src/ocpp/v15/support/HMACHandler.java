@@ -62,7 +62,7 @@ import org.slf4j.LoggerFactory;
  * </p>
  * 
  * <pre>
- * &lt;Authentication xmlns="urn://SolarNetwork/SolarNode/WS" 
+ * &lt;Authentication xmlns="urn://EniwareNetwork/EniwareEdge/WS" 
  *    ts="2015-01-01T12:00:00.000Z"&gt;doEIdjlsdkfjsopdifjso==&lt;/Authentication&gt;
  * </pre>
  * 
@@ -101,7 +101,7 @@ import org.slf4j.LoggerFactory;
  * <pre>
  * &lt;S:Envelope xmlns:S="http://www.w3.org/2003/05/soap-envelope"&gt;
 	&lt;S:Header&gt;
-		&lt;chargeBoxIdentity xmlns="urn://Ocpp/Cs/2012/06/"&gt;UID=1013,O=SolarDev&lt;/chargeBoxIdentity&gt;
+		&lt;chargeBoxIdentity xmlns="urn://Ocpp/Cs/2012/06/"&gt;UID=1013,O=EniwareDev&lt;/chargeBoxIdentity&gt;
 		&lt;To xmlns="http://www.w3.org/2005/08/addressing"
 			&gt;http://localhost:9000/steve/services/CentralSystemService&lt;/To&gt;
 		&lt;Action xmlns="http://www.w3.org/2005/08/addressing"&gt;/BootNotification&lt;/Action&gt;
@@ -116,8 +116,8 @@ import org.slf4j.LoggerFactory;
 	&lt;/S:Header&gt;
 	&lt;S:Body&gt;
 		&lt;bootNotificationRequest xmlns="urn://Ocpp/Cs/2012/06/"&gt;
-			&lt;chargePointVendor&gt;SolarNetwork&lt;/chargePointVendor&gt;
-			&lt;chargePointModel&gt;SolarNode&lt;/chargePointModel&gt;
+			&lt;chargePointVendor&gt;EniwareNetwork&lt;/chargePointVendor&gt;
+			&lt;chargePointModel&gt;EniwareEdge&lt;/chargePointModel&gt;
 			&lt;chargePointSerialNumber&gt;155&lt;/chargePointSerialNumber&gt;
 			&lt;firmwareVersion&gt;0.1.0&lt;/firmwareVersion&gt;
 		&lt;/bootNotificationRequest&gt;
@@ -130,9 +130,9 @@ import org.slf4j.LoggerFactory;
  * </p>
  * 
  * <pre>
- * UID=1013,O=SolarDev
+ * UID=1013,O=EniwareDev
 2015-06-16T06:31:13.492Z
-{urn://Ocpp/Cs/2012/06/}chargeBoxIdentity=UID=1013,O=SolarDev
+{urn://Ocpp/Cs/2012/06/}chargeBoxIdentity=UID=1013,O=EniwareDev
 {http://www.w3.org/2005/08/addressing}To=http://localhost:9000/steve/services/CentralSystemService
 {http://www.w3.org/2005/08/addressing}Action=/BootNotification
 {http://www.w3.org/2005/08/addressing}ReplyTo=http://www.w3.org/2005/08/addressing/anonymous
@@ -140,8 +140,8 @@ import org.slf4j.LoggerFactory;
 {http://www.w3.org/2005/08/addressing}From=http://192.168.1.44:8680/ocpp/v15
 {http://www.w3.org/2003/05/soap-envelope}Body
 {urn://Ocpp/Cs/2012/06/}bootNotificationRequest
-{urn://Ocpp/Cs/2012/06/}chargePointVendor=SolarNetwork
-{urn://Ocpp/Cs/2012/06/}chargePointModel=SolarNode
+{urn://Ocpp/Cs/2012/06/}chargePointVendor=EniwareNetwork
+{urn://Ocpp/Cs/2012/06/}chargePointModel=EniwareEdge
 {urn://Ocpp/Cs/2012/06/}chargePointSerialNumber=155
 {urn://Ocpp/Cs/2012/06/}firmwareVersion=0.1.0
  * </pre>
@@ -153,7 +153,7 @@ import org.slf4j.LoggerFactory;
  */
 public class HMACHandler implements SOAPHandler<SOAPMessageContext> {
 
-	public static final String SN_WS_NS = "urn://SolarNetwork/SolarNode/WS";
+	public static final String SN_WS_NS = "urn://EniwareNetwork/EniwareEdge/WS";
 	public static final QName SN_WS_AUTH = new QName(SN_WS_NS, "Authentication");
 	public static final String SN_WS_TIMESTAMP = "ts";
 	public static final QName OCPP_CS_CHARGE_BOX_IDENTITY = new QName("urn://Ocpp/Cs/2012/06/",

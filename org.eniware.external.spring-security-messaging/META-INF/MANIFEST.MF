@@ -4,7 +4,7 @@ Bundle-Name: Spring Security Messaging
 Bundle-SymbolicName: org.eniware.external.spring-security-messaging
 Bundle-Version: 4.1.0.RELEASE_1
 Bundle-ClassPath: spring-security-messaging-4.1.0.RELEASE.jar
-Bundle-Vendor: Spring Security/SolarNetwork
+Bundle-Vendor: Spring Security/EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: 
  org.springframework.security.messaging.access.expression;version="4.1.0.RELEASE";

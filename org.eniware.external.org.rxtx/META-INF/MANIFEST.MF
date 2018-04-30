@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: RXTX Serial Library
 Bundle-SymbolicName: org.eniware.external.org.rxtx
 Bundle-Version: 2.2.0.pre2-20120623A
-Bundle-Vendor: rxtx.org/SolarNetwork
+Bundle-Vendor: rxtx.org/EniwareNetwork
 Export-Package: gnu.io;version="2.2.0.pre2"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-NativeCode: 

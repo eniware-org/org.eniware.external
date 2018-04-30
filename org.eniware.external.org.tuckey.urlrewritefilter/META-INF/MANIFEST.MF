@@ -4,7 +4,7 @@ Bundle-Name: UrlRewriteFilter
 Bundle-SymbolicName: org.eniware.external.org.tuckey.urlrewritefilter
 Bundle-Version: 4.0.4.SN01
 Bundle-ClassPath: urlrewritefilter-4.0.4.jar
-Bundle-Vendor: Paul Tuckey/SolarNetwork
+Bundle-Vendor: Paul Tuckey/EniwareNetwork
 Export-Package: 
  org.tuckey.web.filters.urlrewrite;version="4.0.4",
  org.tuckey.web.filters.urlrewrite.extend;version="4.0.4",

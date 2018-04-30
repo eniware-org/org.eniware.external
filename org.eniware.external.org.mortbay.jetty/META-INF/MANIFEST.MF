@@ -6,7 +6,7 @@ Bundle-Version: 6.1.26.SN01
 Bundle-ClassPath: 
  jetty-6.1.26.jar,
  jetty-util-6.1.26.jar
-Bundle-Vendor: SolarNetwork
+Bundle-Vendor: EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: 
  javax.net.ssl,

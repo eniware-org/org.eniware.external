@@ -4,7 +4,7 @@ Bundle-Name: Jsptags
 Bundle-SymbolicName: org.eniware.external.org.joda.jsptags
 Bundle-Version: 1.1.1
 Bundle-ClassPath: joda-time-jsptags-1.1.1.jar
-Bundle-Vendor: Joda.org/SolarNetwork
+Bundle-Vendor: Joda.org/EniwareNetwork
 Export-Package: org.joda.time.contrib.jsptag;version="1.1.1"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: 

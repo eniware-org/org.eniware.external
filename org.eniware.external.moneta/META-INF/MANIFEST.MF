@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Moneta
 Bundle-SymbolicName: org.eniware.external.moneta
 Bundle-Version: 1.1.0
-Bundle-Vendor: Moneta/SolarNetwork
+Bundle-Vendor: Moneta/EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.8
 Bundle-ClassPath: .,lib/money-api-1.0.1.jar,lib/moneta-1.1.jar
 Bundle-Activator: org.eniware.javax.money.internal.Activator

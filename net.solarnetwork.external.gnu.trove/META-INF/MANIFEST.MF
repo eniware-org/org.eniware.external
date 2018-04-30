@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: GNU Trove
 Bundle-SymbolicName: org.eniware.external.gnu.trove
 Bundle-Version: 3.0.3.SN01
-Bundle-Vendor: SolarNetwork
+Bundle-Vendor: EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: 
  gnu.trove;version="3.0.3",
