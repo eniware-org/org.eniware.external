@@ -38,24 +38,24 @@
 package net.wimpi.modbus.util;
 
 /**
- * Class defining a linked node element.
+ * Class defining a linked Edge element.
 
  * @version 1.2rc2 
  */ 
 
 
-public class LinkedNode {
+public class LinkedEdge {
 
-  protected Object m_Node;
-  protected LinkedNode m_NextNode = null;
+  protected Object m_Edge;
+  protected LinkedEdge m_NextEdge = null;
 
-  public LinkedNode(Object node) {
-    m_Node = node;
+  public LinkedEdge(Object Edge) {
+    m_Edge = Edge;
   }//constructor(Object)
 
-  public LinkedNode(Object node, LinkedNode linkednode) {
-    m_Node = node;
-    m_NextNode = linkednode;
-  }//constructor(Object,LinkedNode)
+  public LinkedEdge(Object Edge, LinkedEdge linkedEdge) {
+    m_Edge = Edge;
+    m_NextEdge = linkedEdge;
+  }//constructor(Object,LinkedEdge)
 
-}//LinkedNode
+}//LinkedEdge

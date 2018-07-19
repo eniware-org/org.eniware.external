@@ -40,20 +40,20 @@ package net.wimpi.modbus.util;
 public class LinkedQueue {
 
   /**
-   * Dummy header node of list. The first actual node, if it exists, is always
-   * at m_Head.m_NextNode. After each take, the old first node becomes the head.
+   * Dummy header Edge of list. The first actual Edge, if it exists, is always
+   * at m_Head.m_NextEdge. After each take, the old first Edge becomes the head.
    **/
-  protected LinkedNode m_Head;
+  protected LinkedEdge m_Head;
 
   /**
-   * Helper monitor for managing access to last node.
+   * Helper monitor for managing access to last Edge.
    **/
   protected final Object m_PutLock = new Object();
 
   /**
-   * The last node of list. Put() appends to list, so modifies m_Tail_
+   * The last Edge of list. Put() appends to list, so modifies m_Tail_
    **/
-  protected LinkedNode m_Tail;
+  protected LinkedEdge m_Tail;
 
   /**
    * The number of threads waiting for a take.
@@ -65,16 +65,16 @@ public class LinkedQueue {
   protected int m_WaitingForTake = 0;
 
   public LinkedQueue() {
-    m_Head = new LinkedNode(null);
+    m_Head = new LinkedEdge(null);
     m_Tail = m_Head;
   }//constructor
 
   /** Main mechanics for put/offer **/
   protected void insert(Object x) {
     synchronized (m_PutLock) {
-      LinkedNode p = new LinkedNode(x);
+      LinkedEdge p = new LinkedEdge(x);
       synchronized (m_Tail) {
-        m_Tail.m_NextNode = p;
+        m_Tail.m_NextEdge = p;
         m_Tail = p;
       }
       if (m_WaitingForTake > 0)
@@ -86,10 +86,10 @@ public class LinkedQueue {
   protected synchronized Object extract() {
     synchronized (m_Head) {
       Object x = null;
-      LinkedNode first = m_Head.m_NextNode;
+      LinkedEdge first = m_Head.m_NextEdge;
       if (first != null) {
-        x = first.m_Node;
-        first.m_Node = null;
+        x = first.m_Edge;
+        first.m_Edge = null;
         m_Head = first;
       }
       return x;
@@ -149,9 +149,9 @@ if (Thread.interrupted()) throw new InterruptedException();//
 
   public Object peek() {
     synchronized (m_Head) {
-      LinkedNode first = m_Head.m_NextNode;
+      LinkedEdge first = m_Head.m_NextEdge;
       if (first != null) {
-        return first.m_Node;
+        return first.m_Edge;
       } else {
         return null;
       }
@@ -161,7 +161,7 @@ if (Thread.interrupted()) throw new InterruptedException();//
 
   public boolean isEmpty() {
     synchronized (m_Head) {
-      return m_Head.m_NextNode == null;
+      return m_Head.m_NextEdge == null;
     }
   }//isEmpty
 

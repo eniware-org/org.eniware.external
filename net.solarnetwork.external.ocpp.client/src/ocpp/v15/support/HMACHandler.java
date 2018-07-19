@@ -90,7 +90,7 @@ import org.slf4j.LoggerFactory;
  * add is <code>{uri}localName=value</code> where <code>uri</code> is the URI of
  * the namespace of the element, <code>localName</code> is the element name, and
  * <code>value</code> is the normalized text value of the element (normalized by
- * calling {@link org.w3c.dom.Node.normalize()}). If the text value is only
+ * calling {@link org.w3c.dom.Edge.normalize()}). If the text value is only
  * whitespace, however, the <code>=value</code> part is omitted.
  * </p>
  * 
@@ -261,7 +261,7 @@ public class HMACHandler implements SOAPHandler<SOAPMessageContext> {
 			String hashKey = headerName.toString(); // e.g. {nsURL}localName
 			String hashValue = "";
 			if ( WSAddressingFromHandler.WSA_NS.equals(headerName.getNamespaceURI()) ) {
-				// if this element has a child Address element, use that content, otherwise this node's content
+				// if this element has a child Address element, use that content, otherwise this Edge's content
 				SOAPElement addr = null;
 				for ( @SuppressWarnings("unchecked")
 				Iterator<SOAPElement> children = header

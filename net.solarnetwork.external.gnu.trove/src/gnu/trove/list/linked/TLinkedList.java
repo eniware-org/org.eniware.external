@@ -38,7 +38,7 @@ import java.lang.reflect.Array;
  * Using this implementation allows you to get java.util.LinkedList
  * behavior (a doubly linked list, with Iterators that support insert
  * and delete operations) without incurring the overhead of creating
- * <tt>Node</tt> wrapper objects for every element in your list.
+ * <tt>Edge</tt> wrapper objects for every element in your list.
  * <p/>
  * The requirement to achieve this time/space gain is that the
  * Objects stored in the List implement the <tt>TLinkable</tt>
@@ -276,24 +276,24 @@ public class TLinkedList<T extends TLinkable<T>> extends AbstractSequentialList<
         // Determine if it's better to get there from the front or the back
         if ( index > ( _size >> 1 ) ) {
             int position = _size - 1;
-            T node = _tail;
+            T Edge = _tail;
 
             while ( position > index ) {
-                node = node.getPrevious();
+                Edge = Edge.getPrevious();
                 position--;
             }
 
-            return node;
+            return Edge;
         } else {
             int position = 0;
-            T node = _head;
+            T Edge = _head;
 
             while ( position < index ) {
-                node = node.getNext();
+                Edge = Edge.getNext();
                 position++;
             }
 
-            return node;
+            return Edge;
         }
     }
 
@@ -319,7 +319,7 @@ public class TLinkedList<T extends TLinkable<T>> extends AbstractSequentialList<
 
 
     /**
-     * Return the node following the given node. This method exists for two reasons:
+     * Return the Edge following the given Edge. This method exists for two reasons:
      * <ol>
      * <li>It's really not recommended that the methods implemented by TLinkable be
      * called directly since they're used internally by this class.</li>
@@ -327,11 +327,11 @@ public class TLinkedList<T extends TLinkable<T>> extends AbstractSequentialList<
      * objects directly.</li>
      * </ol>
      * <p/>
-     * NOTE: this should only be used with nodes contained in the list. The results are
+     * NOTE: this should only be used with Edges contained in the list. The results are
      * undefined with anything else.
      *
-     * @param current The current node
-     * @return the node after the current node
+     * @param current The current Edge
+     * @return the Edge after the current Edge
      */
     @SuppressWarnings({"unchecked"})
     public T getNext( T current ) {
@@ -340,7 +340,7 @@ public class TLinkedList<T extends TLinkable<T>> extends AbstractSequentialList<
 
 
     /**
-     * Return the node preceding the given node. This method exists for two reasons:
+     * Return the Edge preceding the given Edge. This method exists for two reasons:
      * <ol>
      * <li>It's really not recommended that the methods implemented by TLinkable be
      * called directly since they're used internally by this class.</li>
@@ -348,11 +348,11 @@ public class TLinkedList<T extends TLinkable<T>> extends AbstractSequentialList<
      * objects directly.</li>
      * </ol>
      * <p/>
-     * NOTE: this should only be used with nodes contained in the list. The results are
+     * NOTE: this should only be used with Edges contained in the list. The results are
      * undefined with anything else.
      *
-     * @param current The current node
-     * @return the node after the current node
+     * @param current The current Edge
+     * @return the Edge after the current Edge
      */
     @SuppressWarnings({"unchecked"})
     public T getPrevious( T current ) {
@@ -435,16 +435,16 @@ public class TLinkedList<T extends TLinkable<T>> extends AbstractSequentialList<
             linkable.setPrevious( _tail );
             _tail = linkable;
         } else {
-            T node = get( index );
+            T Edge = get( index );
 
-            T before = node.getPrevious();
+            T before = Edge.getPrevious();
             if ( before != null ) {
                 before.setNext( linkable );
             }
 
             linkable.setPrevious( before );
-            linkable.setNext( node );
-            node.setPrevious( linkable );
+            linkable.setNext( Edge );
+            Edge.setPrevious( linkable );
         }
         _size++;
     }
@@ -561,14 +561,14 @@ public class TLinkedList<T extends TLinkable<T>> extends AbstractSequentialList<
      */
     @SuppressWarnings({"unchecked"})
     public boolean forEachValue( TObjectProcedure<T> procedure ) {
-        T node = _head;
-        while ( node != null ) {
-            boolean keep_going = procedure.execute( node );
+        T Edge = _head;
+        while ( Edge != null ) {
+            boolean keep_going = procedure.execute( Edge );
             if ( !keep_going ) {
                 return false;
             }
 
-            node = node.getNext();
+            Edge = Edge.getNext();
         }
 
         return true;
@@ -706,7 +706,7 @@ public class TLinkedList<T extends TLinkable<T>> extends AbstractSequentialList<
 
 
         /**
-         * returns the index of the next node in the list (the
+         * returns the index of the next Edge in the list (the
          * one that would be returned by a call to next()).
          *
          * @return an <code>int</code> value

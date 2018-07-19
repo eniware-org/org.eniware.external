@@ -35,7 +35,7 @@ public interface TLinkable<T extends TLinkable> extends Serializable {
 	static final long serialVersionUID = 997545054865482562L;
 
     /**
-     * Returns the linked list node after this one.
+     * Returns the linked list Edge after this one.
      *
      * @return a <code>TLinkable</code> value
      */
@@ -43,7 +43,7 @@ public interface TLinkable<T extends TLinkable> extends Serializable {
 
 
     /**
-     * Returns the linked list node before this one.
+     * Returns the linked list Edge before this one.
      *
      * @return a <code>TLinkable</code> value
      */
@@ -51,7 +51,7 @@ public interface TLinkable<T extends TLinkable> extends Serializable {
 
 
     /**
-     * Sets the linked list node after this one.
+     * Sets the linked list Edge after this one.
      *
      * @param linkable a <code>TLinkable</code> value
      */
@@ -59,7 +59,7 @@ public interface TLinkable<T extends TLinkable> extends Serializable {
 
 
     /**
-     * Sets the linked list node before this one.
+     * Sets the linked list Edge before this one.
      *
      * @param linkable a <code>TLinkable</code> value
      */

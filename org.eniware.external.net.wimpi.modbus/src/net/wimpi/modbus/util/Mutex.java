@@ -53,30 +53,30 @@ package net.wimpi.modbus.util;
  * expressed using java synchronized blocks because the
  * acquire/release pairs do not occur in the same method or
  * code block. For example, you can use them for hand-over-hand
- * locking across the nodes of a linked list. This allows
+ * locking across the Edges of a linked list. This allows
  * extremely fine-grained locking,  and so increases
  * potential concurrency, at the cost of additional complexity and
  * overhead that would normally make this worthwhile only in cases of
  * extreme contention.
  * <pre>
- * class Node {
+ * class Edge {
  *   Object item;
- *   Node next;
- *   Mutex lock = new Mutex(); // each node keeps its own lock
+ *   Edge next;
+ *   Mutex lock = new Mutex(); // each Edge keeps its own lock
  * <p/>
- *   Node(Object x, Node n) { item = x; next = n; }
+ *   Edge(Object x, Edge n) { item = x; next = n; }
  * }
  * <p/>
  * class List {
- *    protected Node head; // pointer to first node of list
+ *    protected Edge head; // pointer to first Edge of list
  * <p/>
  *    // Use plain java synchronization to protect head field.
  *    //  (We could instead use a Mutex here too but there is no
  *    //  reason to do so.)
- *    protected synchronized Node getHead() { return head; }
+ *    protected synchronized Edge getHead() { return head; }
  * <p/>
  *    boolean search(Object x) throws InterruptedException {
- *      Node p = getHead();
+ *      Edge p = getHead();
  *      if (p == null) return false;
  * <p/>
  *      //  (This could be made more compact, but for clarity of illustration,
@@ -94,7 +94,7 @@ package net.wimpi.modbus.util;
  *          return true;
  *        }
  *        else {
- *          Node nextp = p.next;
+ *          Edge nextp = p.next;
  *          if (nextp == null) {
  *            p.lock.release();       // release final lock that was held
  *            return false;
@@ -119,7 +119,7 @@ package net.wimpi.modbus.util;
  *      // The method does not need to wait out other traversers
  *      // who have already made it past head.
  * <p/>
- *      head = new Node(x, head);
+ *      head = new Edge(x, head);
  *    }
  * <p/>
  *    // ...  other similar traversal and update methods ...
