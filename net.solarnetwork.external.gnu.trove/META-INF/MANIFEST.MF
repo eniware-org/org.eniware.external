@@ -29,3 +29,4 @@ Export-Package:
  gnu.trove.stack;version="3.0.3",
  gnu.trove.stack.array;version="3.0.3",
  gnu.trove.strategy;version="3.0.3"
+Automatic-Module-Name: org.eniware.external.gnu.trove

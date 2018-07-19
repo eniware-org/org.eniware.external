@@ -14,3 +14,4 @@ Export-Package: net.wimpi.modbus;version="1.2.0.rc1",
  net.wimpi.modbus.net;version="1.2.0.rc1",
  net.wimpi.modbus.procimg;version="1.2.0.rc1",
  net.wimpi.modbus.util;version="1.2.0.rc1"
+Automatic-Module-Name: org.eniware.external.net.wimpi.modbus

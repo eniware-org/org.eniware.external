@@ -23,3 +23,4 @@ Import-Package:
  org.w3c.dom,
  org.xml.sax,
  org.xml.sax.helpers
+Automatic-Module-Name: org.eniware.external.org.tuckey.urlrewritefilter

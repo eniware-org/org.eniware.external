@@ -95,3 +95,4 @@ Export-Package:
    new org.mortbay.util.ajax,
    javax.servlet.http",
  org.mortbay.xml;version="6.1.26";uses:="javax.xml.parsers,org.xml.sax"
+Automatic-Module-Name: org.eniware.external.org.mortbay.jetty

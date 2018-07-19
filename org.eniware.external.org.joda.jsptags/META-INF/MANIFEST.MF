@@ -19,3 +19,4 @@ Import-Package:
  org.joda.time;version="1.6.2",
  org.joda.time.base;version="1.6.2",
  org.joda.time.format;version="1.6.2"
+Automatic-Module-Name: org.eniware.external.org.joda.jsptags

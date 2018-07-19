@@ -59,3 +59,4 @@ Import-Package:
  org.springframework.util;version="[4.2,5.0)",
  org.springframework.web.socket;version="[4.2,5.0)",
  org.springframework.web.socket.server;version="[4.2,5.0)"
+Automatic-Module-Name: org.eniware.external.spring-security-messaging

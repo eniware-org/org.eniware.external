@@ -38,3 +38,4 @@ Export-Package:
    javax.xml.ws.handler.soap,
    org.apache.commons.codec.binary,
    org.slf4j"
+Automatic-Module-Name: org.eniware.external.ocpp.client
