@@ -28,7 +28,7 @@ import java.io.IOException;
 /**
  * An open addressed hashing implementation for short/long primitive entries.
  ==================================================================
- *  Eniware Open sorce:Nikolai Manchev
+ *  Eniware Open Source:Nikolai Manchev
  *  Apache License 2.0
  * ==================================================================
  * @version $Id: _K__V_Hash.template,v 1.1.2.6 

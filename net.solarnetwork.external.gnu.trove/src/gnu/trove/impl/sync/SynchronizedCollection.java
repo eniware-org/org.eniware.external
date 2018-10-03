@@ -21,7 +21,7 @@ import java.util.Iterator;
 
 /**
  * ==================================================================
- *  Eniware Open sorce:Nikolai Manchev
+ *  Eniware Open Source:Nikolai Manchev
  *  Apache License 2.0
  * ==================================================================
  */

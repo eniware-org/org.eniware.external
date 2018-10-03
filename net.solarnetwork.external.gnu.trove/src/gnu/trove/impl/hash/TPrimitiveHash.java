@@ -18,7 +18,7 @@ import gnu.trove.impl.HashFunctions;
 
 /**
  *  ==================================================================
- *  Eniware Open sorce:Nikolai Manchev
+ *  Eniware Open Source:Nikolai Manchev
  *  Apache License 2.0
  * ==================================================================
  * The base class for hashtables of primitive values.  Since there is
