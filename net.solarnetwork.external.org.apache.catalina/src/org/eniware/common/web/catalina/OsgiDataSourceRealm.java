@@ -25,13 +25,13 @@ import org.osgi.framework.ServiceReference;
  * </p>
  * 
  * <pre>
- * &lt;Realm className="net.solarnetwork.common.web.catalina.OsgiDataSourceRealm"
+ * &lt;Realm className="org.eniware.common.web.catalina.OsgiDataSourceRealm"
  * 					dataSourceName="(db=central)" 
  * 					digest="SHA-256"
- * 					userTable="solardras.dras_user" 
+ * 					userTable="eniwaredras.dras_user" 
  * 					userNameCol="username"
  * 					userCredCol="passwd" 
- * 					userRoleTable="solardras.dras_auth_roles"
+ * 					userRoleTable="eniwaredras.dras_auth_roles"
  * 					roleNameCol="rolename" /&gt;
  * </pre>
  * 
