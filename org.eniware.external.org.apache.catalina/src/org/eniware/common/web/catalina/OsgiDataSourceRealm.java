@@ -22,7 +22,7 @@
  * ==================================================================
  */
 
-package net.solarnetwork.common.web.catalina;
+package org.eniware.common.web.catalina;
 
 import java.sql.Connection;
 import java.sql.SQLException;
