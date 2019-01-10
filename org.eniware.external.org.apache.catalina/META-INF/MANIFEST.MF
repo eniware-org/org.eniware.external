@@ -5,8 +5,9 @@ Bundle-SymbolicName: org.eniware.external.org.apache.catalina
 Bundle-Version: 1.1.0
 Fragment-Host: org.apache.catalina;bundle-version="8.5"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Export-Package: org.eniware.common.web.catalina;version="1.0.0"
+Export-Package: org.eniware.common.web.catalina;version="1.0.0";uses:="org.apache.catalina.realm"
 Import-Package: 
  javax.sql,
  org.eniware.common.web.catalina;version="1.0.0",
  org.osgi.framework;version="[1.7,2.0)"
+ org.eniware.external.org.apache.catalina;version="1.1.0",
