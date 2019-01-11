@@ -10,4 +10,3 @@ Import-Package:
  javax.sql,
  org.eniware.common.web.catalina;version="1.0.0",
  org.osgi.framework;version="[1.7,2.0)"
- org.eniware.external.org.apache.catalina;version="1.1.0",
