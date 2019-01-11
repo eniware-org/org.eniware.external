@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: Apache Felix Utils
 Bundle-SymbolicName: org.eniware.external.org.apache.felix.utils
 Bundle-Version: 1.8.4.SN01
-Bundle-Vendor: Apache/SolarNetwork
+Bundle-Vendor: Apache/EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Export-Package: 
  org.apache.felix.utils.collections;version="1.8.4";uses:="org.apache.felix.utils.collections",
