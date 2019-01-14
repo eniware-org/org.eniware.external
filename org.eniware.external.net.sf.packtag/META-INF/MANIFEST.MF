@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: pack:tag
 Bundle-SymbolicName: org.eniware.external.net.sf.packtag
 Bundle-Version: 3.13.1.SN02
-Bundle-Vendor: SolarNetwork/Daniel Galán y Martins
+Bundle-Vendor: EniwareNetwork
 Bundle-ClassPath: 
  packtag-core-3.13.1_SN02.jar
 Export-Package: 

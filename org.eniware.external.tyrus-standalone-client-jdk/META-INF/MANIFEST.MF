@@ -4,7 +4,7 @@ Bundle-Name: Tyrus Websocket Client (JDK)
 Bundle-SymbolicName: org.eniware.external.tyrus-standalone-client-jdk
 Bundle-Version: 1.13.0
 Bundle-ClassPath: tyrus-standalone-client-jdk-1.13.jar
-Bundle-Vendor: Glassfish/SolarNetwork
+Bundle-Vendor: Glassfish/EniwareNetwork
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
 Export-Package: 
  javax.websocket;version="1.1.0",

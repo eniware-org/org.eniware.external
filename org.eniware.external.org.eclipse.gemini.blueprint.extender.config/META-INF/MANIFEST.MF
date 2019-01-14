@@ -1,6 +1,6 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
-Bundle-Name: SolarNetwork Gemini Blueprint Extender Config
+Bundle-Name: EniwareNetwork Gemini Blueprint Extender Config
 Bundle-SymbolicName: org.eniware.external.org.eclipse.gemini.blueprint.extender.config
 Bundle-Version: 2.0.1
 Bundle-Vendor: EniwareNetwork
