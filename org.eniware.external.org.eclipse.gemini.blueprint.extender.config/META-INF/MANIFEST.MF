@@ -7,4 +7,5 @@ Bundle-Vendor: EniwareNetwork
 Fragment-Host: org.eclipse.gemini.blueprint.extender;bundle-version="[2.0.0,3.0.0)"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Import-Package: org.springframework.scheduling.concurrent;version="[4.2,5.0)"
+Optionally-imported-package: org.eclipse.gemini.blueprint.extensions.annotation_[2.0.0.RELEASE,2.0.0.RELEASE"
 Automatic-Module-Name: org.eniware.external.org.eclipse.gemini.blueprint.extender.config
