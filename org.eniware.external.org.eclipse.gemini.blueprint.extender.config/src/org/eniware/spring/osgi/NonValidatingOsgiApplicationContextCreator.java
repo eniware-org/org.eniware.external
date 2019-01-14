@@ -22,7 +22,7 @@
  * ==================================================================
  */
 
-package net.solarnetwork.spring.osgi;
+package org.eniware.spring.osgi;
 
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -46,7 +46,7 @@ import org.springframework.util.ObjectUtils;
  * This can greatly increase application startup time on low-powered devices.
  * </p>
  * 
- * @author matt
+ * @author 
  * @version 1.1
  */
 public class NonValidatingOsgiApplicationContextCreator
